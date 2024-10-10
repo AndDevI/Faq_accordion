@@ -10,6 +10,14 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="tailwind.config.js"></script>
 
+        <style type="text/tailwindcss">
+            @layer components {
+                .accordionBody {
+                    @apply max-h-0 overflow-hidden transition-all duration-200 ease-out;
+                }
+            }
+        </style>
+
         <title>Frontend Mentor | FAQ accordion</title>
     </head>
     <body class="bg-lightPink font-workSans">
@@ -24,13 +32,13 @@
             <div class="mt-8">
                 <div>
                     <div class="flex gap-5">
-                        <h6 class="font-semibold text-darkPurple leading-5">
+                        <h6 class="font-semibold text-darkPurple leading-5 hover:text-fuchsia-500 cursor-pointer">
                             What is Frontend Mentor, and how will it help me?
                         </h6>
                         <img src="assets/icons/icon-plus.svg" alt="">
                     </div>
                                 
-                    <div class="mt-5">
+                    <div class="accordionBody">
                         <p class="text-sm text-grayishPurple">
                             Frontend Mentor offers realistic coding challenges to help developers improve their
                             frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
