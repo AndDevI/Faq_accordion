@@ -20,10 +20,13 @@
 
         <title>Frontend Mentor | FAQ accordion</title>
     </head>
-    <body class="bg-lightPink font-workSans">
-        <div class="bg-imgMobile bg-cover h-56"></div>
+    <body class="bg-lightPink font-workSans flex flex-col h-screen items-center">
+        <picture>
+            <source media="(min-width: 600px)" srcset="/assets/images/background-pattern-desktop.svg">
+            <img src="/assets/images/background-pattern-mobile.svg" alt="bg image" class="w-screen h-72 block object-cover">
+        </picture>
 
-        <main class="bg-white rounded-lg p-6 mx-6 -mt-24">
+        <main class="bg-white rounded-lg p-6 mx-6 -mt-24 shadow-xl shadow-darkPurple/20 max-w-xl">
             <div class="flex items-center gap-5 size-5">
                 <img src="assets/icons/icon-star.svg" alt="" class="">
                 <h1 class="text-3xl font-bold text-darkPurple">FAQs</h1>
@@ -104,7 +107,7 @@
            
         </main>
 
-        <div class="text-center text-xs">
+        <div class="text-center text-xs mt-4">
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
                 class="text-blue-700">FrontendMentor</a>.
             Coded by <a href="https://github.com/AndDevI" class="text-blue-700">Andrew Raphael</a>.
