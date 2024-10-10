@@ -8,15 +8,46 @@
         <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="tailwind.config.js"></script>
 
         <title>Frontend Mentor | FAQ accordion</title>
     </head>
-    <body>
+    <body class="bg-lightPink font-workSans">
+        <div class="bg-imgMobile bg-cover h-56"></div>
+
+        <main class="bg-white rounded-lg p-6 mx-6 -mt-10">
+            <div class="flex items-center gap-5 size-5">
+                <img src="assets/icons/icon-star.svg" alt="" class="">
+                <h1 class="text-3xl font-bold text-darkPurple">FAQs</h1>
+            </div>
+
+            <div class="mt-8">
+                <div>
+                    <div class="flex gap-5">
+                        <h6 class="font-semibold text-darkPurple leading-5">
+                            What is Frontend Mentor, and how will it help me?
+                        </h6>
+                        <img src="assets/icons/icon-plus.svg" alt="">
+                    </div>
+                                
+                    <div class="mt-5">
+                        <p class="text-sm text-grayishPurple">
+                            Frontend Mentor offers realistic coding challenges to help developers improve their
+                            frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
+                            all levels and ideal for portfolio building.
+                        </p>
+                    </div>  
+                </div>
+   
         
-        
-        <div class="attribution">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-            Coded by <a href="https://github.com/AndDevI">Andrew Raphael</a>.
+            </div>
+           
+        </main>
+
+        <div class="text-center text-xs">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+                class="text-blue-700">FrontendMentor</a>.
+            Coded by <a href="https://github.com/AndDevI" class="text-blue-700">Andrew Raphael</a>.
         </div>
     </body>
 </html>
