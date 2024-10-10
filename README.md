@@ -8,7 +8,7 @@
 <br>
 
 <p align="center">
-  <img alt="Blog Preview Card" src="./assets/images/preview.jpg" width="100%">
+  <img alt="Blog Preview Card" src="./assets/images/preview.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
